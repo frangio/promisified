@@ -6,13 +6,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Francisco Giordano <frangio.1@gmail.com>",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^13.7.1",
     "ts-toolbelt": "^6.2.0",
     "typescript": "^3.7.5"
   },
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frangio/promisified.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frangio/promisified/issues"
+  },
+  "homepage": "https://github.com/frangio/promisified#readme"
 }
