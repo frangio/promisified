@@ -4,7 +4,7 @@ function promisified(mod, spec) {
   const res = Object.assign({}, mod);
 
   for (const key of spec) {
-    if (key in res) {
+    if (res[key] !== undefined) {
       res[key] = util.promisify(mod[key]);
     }
   }
