@@ -3,16 +3,19 @@
     "incremental": true,
     "target": "es2017",
     "module": "commonjs",
-    // "allowJs": true,
-    // "checkJs": true,
+    "allowJs": true,
+    "checkJs": true,
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    // "outFile": "./",
-    // "outDir": "./",
-    // "rootDir": "./",
-    // "noEmit": true,
+    "emitDeclarationOnly": true,
     "strict": true,
     "esModuleInterop": true
-  }
+  },
+  "include": [
+    "*.js"
+  ],
+  "exclude": [
+    "internal.js"
+  ]
 }

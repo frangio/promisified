@@ -1,2 +1,4 @@
 node_modules
 *.tsbuildinfo
+*.d.ts
+*.d.ts.map
