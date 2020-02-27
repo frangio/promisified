@@ -1,7 +1,7 @@
 const util = require('util');
 
 function promisified(mod, spec) {
-  const res = Object.assign({}, mod);
+  const res = Object.defineProperties({}, Object.getOwnPropertyDescriptors(mod));
 
   for (const key of spec) {
     if (res[key] !== undefined) {
