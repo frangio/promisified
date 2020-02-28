@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 const util = require('util');
 
 function promisified(mod, spec) {
