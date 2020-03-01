@@ -5,6 +5,11 @@
   "scripts": {
     "prepare": "tsc -b"
   },
+  "files": [
+    "*.js",
+    "*.d.ts",
+    "*.d.ts.map"
+  ],
   "keywords": [],
   "author": "Francisco Giordano <frangio.1@gmail.com>",
   "license": "MIT",
