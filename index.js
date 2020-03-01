@@ -1,5 +1,10 @@
-const fs = require('./fs');
+const { promisified } = require('./internal');
 
-module.exports = {
-  fs,
+const globals = {
+  setTimeout: global.setTimeout,
+  setImmediate: global.setImmediate,
 };
+
+const pglobals = promisified(globals, Object.keys(globals));
+
+module.exports = pglobals;
