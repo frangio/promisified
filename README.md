@@ -12,11 +12,6 @@ const fs = require('promisified/fs');
 async function main() {
   const data = await fs.readFile('data.txt', 'utf8');
 }
-
-main().catch(e => {
-  console.error(e);
-  process.exit(1);
-});
 ```
 
 Note that in some cases there are already promisified versions built into
